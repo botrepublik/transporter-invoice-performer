@@ -139,7 +139,7 @@
       <AssemblyReference>DataService.TransporterInvoicePerformer</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="DistInvLines" sap:VirtualizedContainerService.HintSize="1531.6666666666667,3464" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="DistInvLines" sap:VirtualizedContainerService.HintSize="1452.0000000000002,1797.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Default="1" Name="Counter" />
       <Variable x:TypeArguments="sc:IEnumerable" Name="list_DeliveryIds" />
@@ -156,14 +156,14 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="617,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Capturing Invoice Line Items&quot;]" />
-    <Sequence DisplayName="Data Sequence" sap:VirtualizedContainerService.HintSize="617,262" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="550.4,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Capturing Invoice Line Items&quot;]" />
+    <Sequence DisplayName="Data Sequence" sap:VirtualizedContainerService.HintSize="550.4,263.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,170" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478.4,171.2" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
         <ui:MultipleAssign.AssignOperations>
           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -186,31 +186,31 @@
         </ui:MultipleAssign.AssignOperations>
       </ui:MultipleAssign>
     </Sequence>
-    <Sequence DisplayName="Distribution Line Sequence" sap:VirtualizedContainerService.HintSize="617,3006" sap2010:WorkflowViewState.IdRef="Sequence_6">
+    <Sequence DisplayName="Distribution Line Sequence" sap:VirtualizedContainerService.HintSize="550.4,1336.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard sap2010:Annotation.AnnotationText="Inputs the Invoice Lines in the Distribution Panel" AttachMode="ByInstance" DisplayName="Use Application: Oracle Applications " sap:VirtualizedContainerService.HintSize="583,2923" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="4ec529e3-4bbf-496b-b4e5-c1cb16ce9959" Version="V2">
+      <uix:NApplicationCard sap2010:Annotation.AnnotationText="Inputs the Invoice Lines in the Distribution Panel" AttachMode="ByInstance" DisplayName="Use Application: Oracle Applications " sap:VirtualizedContainerService.HintSize="516.8,1253.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="4ec529e3-4bbf-496b-b4e5-c1cb16ce9959" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="549,2578" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="483.2,908" sap2010:WorkflowViewState.IdRef="Sequence_2">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Loops through the Delivery Ids (in the list: list_DeliveryIds." DisplayName="For Each currentText" sap:VirtualizedContainerService.HintSize="515,718" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[in_listDeliveryIds]">
+              <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Loops through the Delivery Ids (in the list: list_DeliveryIds." DisplayName="For Each currentText" sap:VirtualizedContainerService.HintSize="449.6,796.8" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[in_listDeliveryIds]">
                 <ui:ForEach.Body>
                   <ActivityAction x:TypeArguments="x:String">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:String" Name="currentText" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="513,557" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,619.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:String" Name="DeliveredInvoice" />
                       </Sequence.Variables>
@@ -219,8 +219,15 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uda:GetEntityRecordById x:TypeArguments="t:TransporterInvoiceProcessing" ContinueOnError="False" DisplayName="Get Entity Record By Delivery Id" EntityId="e6f8807a-3711-f011-aaa7-002248a1377f" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="479,172" sap2010:WorkflowViewState.IdRef="GetEntityRecordById`1_3" OutputEntity="[OutputEntity]" RecordId="[Guid.Parse(currentText)]" TimeoutInMs="30000" />
-                      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,325" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+                      <uda:GetEntityRecordById x:TypeArguments="t:TransporterInvoiceProcessing" ContinueOnError="False" DisplayName="Get Entity Record By Delivery Id" EntityId="e6f8807a-3711-f011-aaa7-002248a1377f" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="GetEntityRecordById`1_3" OutputEntity="[OutputEntity]" RecordId="[Guid.Parse(currentText)]" TimeoutInMs="30000">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uda:GetEntityRecordById>
+                      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
                         <ui:MultipleAssign.AssignOperations>
                           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
@@ -281,7 +288,180 @@
                             </ui:AssignOperation>
                           </scg:List>
                         </ui:MultipleAssign.AssignOperations>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
                       </ui:MultipleAssign>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Amount'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="4ec529e3-4bbf-496b-b4e5-c1cb16ce9959" Text="[DeliveryCharge]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable DesignTimeRectangle="308, 287, 202, 36" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="[string.Format(&quot;&lt;java name='Distributions (Pwani Payables Super User) - Pwani Oil Products Limited,*' role='internal frame' /&gt;&lt;java idx='{0}' name='Amount Required' role='text' /&gt;&quot;, Counter)]" FuzzySelectorArgument="[string.Format(&quot;&lt;java name='Distributions (Pwani Payables Super User) - Pwani Oil Products Limited, *' role='internal frame' /&gt;&lt;java idx='{0}' name='Amount Required' role='text' /&gt;&quot;, Counter)]" Guid="a0e1c23e-4aaa-41e4-9928-d22e4c1c1caf" ImageBase64="" InformativeScreenshot="436d29185e00ed799a1915ec1c20ec3a.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Oracle Applications - *' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target DesignTimeRectangle="308, 251, 202, 36" ElementType="Text" FullSelectorArgument="&lt;java name='Distributions (Pwani Payables Super User) - Pwani Oil Products Limited, *' role='internal frame' /&gt;&lt;java cls='FolderPrompt' idx='3' role='text' /&gt;" FuzzySelectorArgument="&lt;java name='Distributions (Pwani Payables Super User) - Pwani Oil Products Limited, *' role='internal frame' /&gt;&lt;java cls='FolderPrompt' role='text' check:text='Amount' /&gt;" Guid="bd22c418-4eaf-4daf-a7c7-4fb870289723" ImageBase64="" SearchSteps="Selector, FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.VerifyOptions>
+                          <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          </uix:VerifyExecutionTypeIntoOptions>
+                        </uix:NTypeInto.VerifyOptions>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NTypeInto>
+                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" ScopeIdentifier="4ec529e3-4bbf-496b-b4e5-c1cb16ce9959" Shortcuts="[d(hk)][k(Tab)][u(hk)]" Version="V4">
+                        <uix:NKeyboardShortcuts.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NKeyboardShortcuts.VerifyOptions>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NKeyboardShortcuts>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Account'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="4ec529e3-4bbf-496b-b4e5-c1cb16ce9959" Text="10-10-601-510201-000-0000" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable DesignTimeRectangle="688, 287, 288, 36" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="[string.Format(&quot;&lt;java name='Distributions (Pwani Payables Super User) - Pwani Oil Products Limited, *' role='internal frame' /&gt;&lt;java idx='{0}' name='Account RequiredList of Values' role='text' /&gt;&quot;, Counter)]" FuzzySelectorArgument="[string.Format(&quot;&lt;java name='Distributions (Pwani Payables Super User) - Pwani Oil Products Limited, *' role='internal frame' /&gt;&lt;java idx='{0}' name='Account RequiredList of Values' role='text' /&gt;&quot;, Counter)]" Guid="17630b4d-f57d-40fa-b634-b916916723e3" ImageBase64="" InformativeScreenshot="23b7de6c89d464b883f347f8fee19082.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Oracle Applications - *' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target DesignTimeRectangle="688, 251, 288, 36" ElementType="Text" FullSelectorArgument="&lt;java name='Distributions (Pwani Payables Super User) - Pwani Oil Products Limited, *' role='internal frame' /&gt;&lt;java cls='FolderPrompt' idx='5' role='text' /&gt;" FuzzySelectorArgument="&lt;java name='Distributions (Pwani Payables Super User) - Pwani Oil Products Limited, *' role='internal frame' /&gt;&lt;java cls='FolderPrompt' role='text' check:text='Account' /&gt;" Guid="fe06cde1-fd2b-45dc-ad86-1fdb3d66cb67" ImageBase64="" SearchSteps="Selector, FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.VerifyOptions>
+                          <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          </uix:VerifyExecutionTypeIntoOptions>
+                        </uix:NTypeInto.VerifyOptions>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NTypeInto>
+                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_4" ScopeIdentifier="4ec529e3-4bbf-496b-b4e5-c1cb16ce9959" Shortcuts="[d(hk)][k(Tab)][u(hk)]" Version="V4">
+                        <uix:NKeyboardShortcuts.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NKeyboardShortcuts.VerifyOptions>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NKeyboardShortcuts>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Description'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="4ec529e3-4bbf-496b-b4e5-c1cb16ce9959" Text="[Description]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable DesignTimeRectangle="1126, 287, 432, 36" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="[string.Format(&quot;&lt;java name='Distributions (Pwani Payables Super User) - Pwani Oil Products Limited, *' role='internal frame' /&gt;&lt;java idx='{0}' name='Description' role='text' /&gt;&quot;, Counter)]" FuzzySelectorArgument="[string.Format(&quot;&lt;java name='Distributions (Pwani Payables Super User) - Pwani Oil Products Limited, *' role='internal frame' /&gt;&lt;java idx='{0}' name='Description' role='text' /&gt;&quot;, Counter)]" Guid="822e5302-8c7c-4d05-87f9-50ac9a733e4b" ImageBase64="" InformativeScreenshot="7dd44261fbf1ea7177de828b334263ed.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Oracle Applications - *' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target DesignTimeRectangle="1126, 251, 432, 36" ElementType="Text" FullSelectorArgument="&lt;java name='Distributions (Pwani Payables Super User) - Pwani Oil Products Limited, *' role='internal frame' /&gt;&lt;java cls='FolderPrompt' idx='7' role='text' /&gt;" FuzzySelectorArgument="&lt;java name='Distributions (Pwani Payables Super User) - Pwani Oil Products Limited, *' role='internal frame' /&gt;&lt;java cls='FolderPrompt' role='text' check:text='Description' /&gt;" Guid="453348f9-8644-4378-8e18-c8535dd50856" ImageBase64="" SearchSteps="Selector, FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.VerifyOptions>
+                          <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          </uix:VerifyExecutionTypeIntoOptions>
+                        </uix:NTypeInto.VerifyOptions>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NTypeInto>
+                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_5" ScopeIdentifier="4ec529e3-4bbf-496b-b4e5-c1cb16ce9959" Shortcuts="[d(hk)][k(Tab)][u(hk)]" Version="V4">
+                        <uix:NKeyboardShortcuts.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NKeyboardShortcuts.VerifyOptions>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NKeyboardShortcuts>
+                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" ScopeIdentifier="4ec529e3-4bbf-496b-b4e5-c1cb16ce9959" Shortcuts="[d(hk)][k(Down)][u(hk)]" Version="V4">
+                        <uix:NKeyboardShortcuts.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NKeyboardShortcuts.VerifyOptions>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NKeyboardShortcuts>
+                      <Assign sap:VirtualizedContainerService.HintSize="382.4,48" sap2010:WorkflowViewState.IdRef="Assign_5">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[Counter]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">[Counter + 1]</InArgument>
+                        </Assign.Value>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Assign>
                     </Sequence>
                   </ActivityAction>
                 </ui:ForEach.Body>
@@ -291,150 +471,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:ForEach>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Amount'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="515,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="4ec529e3-4bbf-496b-b4e5-c1cb16ce9959" Text="[DeliveryCharge]" Version="V4">
-                <uix:NTypeInto.Target>
-                  <uix:TargetAnchorable DesignTimeRectangle="308, 287, 202, 36" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="[string.Format(&quot;&lt;java name='Distributions (Pwani Payables Super User) - Pwani Oil Products Limited,*' role='internal frame' /&gt;&lt;java idx='{0}' name='Amount Required' role='text' /&gt;&quot;, Counter)]" FuzzySelectorArgument="[string.Format(&quot;&lt;java name='Distributions (Pwani Payables Super User) - Pwani Oil Products Limited, *' role='internal frame' /&gt;&lt;java idx='{0}' name='Amount Required' role='text' /&gt;&quot;, Counter)]" Guid="a0e1c23e-4aaa-41e4-9928-d22e4c1c1caf" ImageBase64="" InformativeScreenshot="436d29185e00ed799a1915ec1c20ec3a.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Oracle Applications - *' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
-                    <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                        <uix:Target DesignTimeRectangle="308, 251, 202, 36" ElementType="Text" FullSelectorArgument="&lt;java name='Distributions (Pwani Payables Super User) - Pwani Oil Products Limited, *' role='internal frame' /&gt;&lt;java cls='FolderPrompt' idx='3' role='text' /&gt;" FuzzySelectorArgument="&lt;java name='Distributions (Pwani Payables Super User) - Pwani Oil Products Limited, *' role='internal frame' /&gt;&lt;java cls='FolderPrompt' role='text' check:text='Amount' /&gt;" Guid="bd22c418-4eaf-4daf-a7c7-4fb870289723" ImageBase64="" SearchSteps="Selector, FuzzySelector" />
-                      </scg:List>
-                    </uix:TargetAnchorable.Anchors>
-                  </uix:TargetAnchorable>
-                </uix:NTypeInto.Target>
-                <uix:NTypeInto.VerifyOptions>
-                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                    <uix:VerifyExecutionTypeIntoOptions.Retry>
-                      <InArgument x:TypeArguments="x:Boolean" />
-                    </uix:VerifyExecutionTypeIntoOptions.Retry>
-                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                      <InArgument x:TypeArguments="x:Double" />
-                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                  </uix:VerifyExecutionTypeIntoOptions>
-                </uix:NTypeInto.VerifyOptions>
-              </uix:NTypeInto>
-              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="515,57" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" ScopeIdentifier="4ec529e3-4bbf-496b-b4e5-c1cb16ce9959" Shortcuts="[d(hk)][k(Tab)][u(hk)]" Version="V4">
-                <uix:NKeyboardShortcuts.VerifyOptions>
-                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                    <uix:VerifyExecutionOptions.Retry>
-                      <InArgument x:TypeArguments="x:Boolean" />
-                    </uix:VerifyExecutionOptions.Retry>
-                    <uix:VerifyExecutionOptions.Timeout>
-                      <InArgument x:TypeArguments="x:Double" />
-                    </uix:VerifyExecutionOptions.Timeout>
-                  </uix:VerifyExecutionOptions>
-                </uix:NKeyboardShortcuts.VerifyOptions>
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-              </uix:NKeyboardShortcuts>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Account'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="515,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="4ec529e3-4bbf-496b-b4e5-c1cb16ce9959" Text="10-10-601-510201-000-0000" Version="V4">
-                <uix:NTypeInto.Target>
-                  <uix:TargetAnchorable DesignTimeRectangle="688, 287, 288, 36" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="[string.Format(&quot;&lt;java name='Distributions (Pwani Payables Super User) - Pwani Oil Products Limited, *' role='internal frame' /&gt;&lt;java idx='{0}' name='Account RequiredList of Values' role='text' /&gt;&quot;, Counter)]" FuzzySelectorArgument="[string.Format(&quot;&lt;java name='Distributions (Pwani Payables Super User) - Pwani Oil Products Limited, *' role='internal frame' /&gt;&lt;java idx='{0}' name='Account RequiredList of Values' role='text' /&gt;&quot;, Counter)]" Guid="17630b4d-f57d-40fa-b634-b916916723e3" ImageBase64="" InformativeScreenshot="23b7de6c89d464b883f347f8fee19082.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Oracle Applications - *' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
-                    <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                        <uix:Target DesignTimeRectangle="688, 251, 288, 36" ElementType="Text" FullSelectorArgument="&lt;java name='Distributions (Pwani Payables Super User) - Pwani Oil Products Limited, *' role='internal frame' /&gt;&lt;java cls='FolderPrompt' idx='5' role='text' /&gt;" FuzzySelectorArgument="&lt;java name='Distributions (Pwani Payables Super User) - Pwani Oil Products Limited, *' role='internal frame' /&gt;&lt;java cls='FolderPrompt' role='text' check:text='Account' /&gt;" Guid="fe06cde1-fd2b-45dc-ad86-1fdb3d66cb67" ImageBase64="" SearchSteps="Selector, FuzzySelector" />
-                      </scg:List>
-                    </uix:TargetAnchorable.Anchors>
-                  </uix:TargetAnchorable>
-                </uix:NTypeInto.Target>
-                <uix:NTypeInto.VerifyOptions>
-                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                    <uix:VerifyExecutionTypeIntoOptions.Retry>
-                      <InArgument x:TypeArguments="x:Boolean" />
-                    </uix:VerifyExecutionTypeIntoOptions.Retry>
-                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                      <InArgument x:TypeArguments="x:Double" />
-                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                  </uix:VerifyExecutionTypeIntoOptions>
-                </uix:NTypeInto.VerifyOptions>
-              </uix:NTypeInto>
-              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="515,57" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_4" ScopeIdentifier="4ec529e3-4bbf-496b-b4e5-c1cb16ce9959" Shortcuts="[d(hk)][k(Tab)][u(hk)]" Version="V4">
-                <uix:NKeyboardShortcuts.VerifyOptions>
-                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                    <uix:VerifyExecutionOptions.Retry>
-                      <InArgument x:TypeArguments="x:Boolean" />
-                    </uix:VerifyExecutionOptions.Retry>
-                    <uix:VerifyExecutionOptions.Timeout>
-                      <InArgument x:TypeArguments="x:Double" />
-                    </uix:VerifyExecutionOptions.Timeout>
-                  </uix:VerifyExecutionOptions>
-                </uix:NKeyboardShortcuts.VerifyOptions>
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-              </uix:NKeyboardShortcuts>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Description'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="515,286" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="4ec529e3-4bbf-496b-b4e5-c1cb16ce9959" Text="[Description]" Version="V4">
-                <uix:NTypeInto.Target>
-                  <uix:TargetAnchorable DesignTimeRectangle="1126, 287, 432, 36" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="[string.Format(&quot;&lt;java name='Distributions (Pwani Payables Super User) - Pwani Oil Products Limited, *' role='internal frame' /&gt;&lt;java idx='{0}' name='Description' role='text' /&gt;&quot;, Counter)]" FuzzySelectorArgument="[string.Format(&quot;&lt;java name='Distributions (Pwani Payables Super User) - Pwani Oil Products Limited, *' role='internal frame' /&gt;&lt;java idx='{0}' name='Description' role='text' /&gt;&quot;, Counter)]" Guid="822e5302-8c7c-4d05-87f9-50ac9a733e4b" ImageBase64="" InformativeScreenshot="7dd44261fbf1ea7177de828b334263ed.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Oracle Applications - *' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
-                    <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                        <uix:Target DesignTimeRectangle="1126, 251, 432, 36" ElementType="Text" FullSelectorArgument="&lt;java name='Distributions (Pwani Payables Super User) - Pwani Oil Products Limited, *' role='internal frame' /&gt;&lt;java cls='FolderPrompt' idx='7' role='text' /&gt;" FuzzySelectorArgument="&lt;java name='Distributions (Pwani Payables Super User) - Pwani Oil Products Limited, *' role='internal frame' /&gt;&lt;java cls='FolderPrompt' role='text' check:text='Description' /&gt;" Guid="453348f9-8644-4378-8e18-c8535dd50856" ImageBase64="" SearchSteps="Selector, FuzzySelector" />
-                      </scg:List>
-                    </uix:TargetAnchorable.Anchors>
-                  </uix:TargetAnchorable>
-                </uix:NTypeInto.Target>
-                <uix:NTypeInto.VerifyOptions>
-                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                    <uix:VerifyExecutionTypeIntoOptions.Retry>
-                      <InArgument x:TypeArguments="x:Boolean" />
-                    </uix:VerifyExecutionTypeIntoOptions.Retry>
-                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                      <InArgument x:TypeArguments="x:Double" />
-                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                  </uix:VerifyExecutionTypeIntoOptions>
-                </uix:NTypeInto.VerifyOptions>
-              </uix:NTypeInto>
-              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="515,247" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_5" ScopeIdentifier="4ec529e3-4bbf-496b-b4e5-c1cb16ce9959" Shortcuts="[d(hk)][k(Tab)][u(hk)]" Version="V4">
-                <uix:NKeyboardShortcuts.VerifyOptions>
-                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                    <uix:VerifyExecutionOptions.Retry>
-                      <InArgument x:TypeArguments="x:Boolean" />
-                    </uix:VerifyExecutionOptions.Retry>
-                    <uix:VerifyExecutionOptions.Timeout>
-                      <InArgument x:TypeArguments="x:Double" />
-                    </uix:VerifyExecutionOptions.Timeout>
-                  </uix:VerifyExecutionOptions>
-                </uix:NKeyboardShortcuts.VerifyOptions>
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-              </uix:NKeyboardShortcuts>
-              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="515,247" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" ScopeIdentifier="4ec529e3-4bbf-496b-b4e5-c1cb16ce9959" Shortcuts="[d(hk)][k(Down)][u(hk)]" Version="V4">
-                <uix:NKeyboardShortcuts.VerifyOptions>
-                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                    <uix:VerifyExecutionOptions.Retry>
-                      <InArgument x:TypeArguments="x:Boolean" />
-                    </uix:VerifyExecutionOptions.Retry>
-                    <uix:VerifyExecutionOptions.Timeout>
-                      <InArgument x:TypeArguments="x:Double" />
-                    </uix:VerifyExecutionOptions.Timeout>
-                  </uix:VerifyExecutionOptions>
-                </uix:NKeyboardShortcuts.VerifyOptions>
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-              </uix:NKeyboardShortcuts>
-              <Assign sap:VirtualizedContainerService.HintSize="515,114" sap2010:WorkflowViewState.IdRef="Assign_5">
-                <Assign.To>
-                  <OutArgument x:TypeArguments="x:Int32">[Counter]</OutArgument>
-                </Assign.To>
-                <Assign.Value>
-                  <InArgument x:TypeArguments="x:Int32">[Counter + 1]</InArgument>
-                </Assign.Value>
-              </Assign>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="515,218" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4ec529e3-4bbf-496b-b4e5-c1cb16ce9959" Version="V4">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="449.6,49.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4ec529e3-4bbf-496b-b4e5-c1cb16ce9959" Version="V4">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable DesignTimeRectangle="108, 78, 26, 22" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;java cls='ToolBar' idx='47' role='tool bar' /&gt;&lt;java name='Save' role='push button' /&gt;" FuzzySelectorArgument="&lt;java cls='ToolBar' role='tool bar' /&gt;&lt;java name='Save' role='push button' check:text='Save' /&gt;" Guid="f72c31b0-3685-4585-aefa-b29acaa5d526" InformativeScreenshot="68f597b952006289ff33e44c407b7b55.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Oracle Applications -*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
                 </uix:NClick.Target>
@@ -448,6 +485,12 @@
                     </uix:VerifyExecutionOptions.Timeout>
                   </uix:VerifyExecutionOptions>
                 </uix:NClick.VerifyOptions>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
               </uix:NClick>
             </Sequence>
           </ActivityAction>
