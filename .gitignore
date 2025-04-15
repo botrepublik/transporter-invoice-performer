@@ -1,0 +1,20 @@
+# Ignore design-time folders
+.objects/
+.settings/
+
+# Ignore execution output
+*.local/
+
+# Ignore log files
+*.log
+
+# Ignore UiPath backup files
+*.screenshots/
+
+# Ignore OneDrive syncing conflicts
+*.tmp
+~$*
+
+# Ignore user-specific files
+.vscode/
+.idea/
